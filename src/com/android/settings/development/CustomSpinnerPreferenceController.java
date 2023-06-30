@@ -41,7 +41,12 @@ public class CustomSpinnerPreferenceController extends DeveloperOptionsPreferenc
 	// You should also set the initial state of the summary when the preference is displayed
 	@Override
 	public void updateState(Preference preference) {
-		String value = ((ListPreference) preference).getValue();
+		ListPreference listPreference = (ListPreference) preference;
+		String value = listPreference.getValue();
+		if (value == null) {
+		    value = "0"; // This is the default value
+		    listPreference.setValue(value);
+		}
 		updateSummary(preference, value);
 	}
 
