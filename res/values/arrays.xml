@@ -1427,5 +1427,12 @@
         <!-- 3:  Always visible -->
         <item>@string/rtt_settings_always_visible</item>
     </string-array>
+    
+    <!--My custom string arrays -->
+    <string-array name="custom_spinner_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
 
 </resources>

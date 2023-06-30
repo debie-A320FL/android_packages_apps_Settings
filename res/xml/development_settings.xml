@@ -40,6 +40,18 @@
             android:title="@string/advanced_reboot_title"
             android:summary="@string/advanced_reboot_summary"
             android:defaultValue="false" />
+            
+        <!-- My custom button -->
+    	<SwitchPreference
+			android:key="custom_toggle"
+			android:title="@string/custom_toggle_title" />
+
+		<ListPreference
+			android:key="custom_spinner"
+			android:title="@string/custom_spinner_title"
+			android:entries="@array/custom_spinner_values"
+			android:entryValues="@array/custom_spinner_values"
+			android:dialogTitle="@string/custom_spinner_title" />
 
         <Preference
             android:key="system_server_heap_dump"
