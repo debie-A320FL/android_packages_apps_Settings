@@ -1434,5 +1434,10 @@
 		<item>1</item>
 		<item>2</item>
 	</string-array>
+	<string-array name="custom_spinner_display_values">
+		<item>Off</item>
+		<item>On</item>
+		<item>Restricted</item>
+	</string-array>
 
 </resources>

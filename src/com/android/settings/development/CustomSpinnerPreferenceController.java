@@ -34,7 +34,18 @@ public class CustomSpinnerPreferenceController extends DeveloperOptionsPreferenc
 
 	private void updateSummary(Preference preference, String value) {
 		String staticDescription = "This is a custom spinner. ";
-		String dynamicDescription = "Current value is: " + value;
+		String dynamicDescription = "";
+
+		if ("0".equals(value)) {
+		    dynamicDescription = "You selected 0. This means ..."; // Add a specific description for value 0
+		} else if ("1".equals(value)) {
+		    dynamicDescription = "You selected 1. This means ..."; // Add a specific description for value 1
+		} else if ("2".equals(value)) {
+		    dynamicDescription = "You selected 2. This means ..."; // Add a specific description for value 2
+		} else {
+		    dynamicDescription = "Current value is: " + value;
+		}
+
 		preference.setSummary(staticDescription + dynamicDescription);
 	}
 
