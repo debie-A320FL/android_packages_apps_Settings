@@ -1428,13 +1428,8 @@
         <item>@string/rtt_settings_always_visible</item>
     </string-array>
     
-    <!--My custom string arrays -->
-    <string-array name="custom_spinner_values">
-		<item>0</item>
-		<item>1</item>
-		<item>2</item>
-	</string-array>
-	<string-array name="custom_spinner_display_values">
+    <!--Signature Spoofing control arrays -->
+	<string-array name="signature_spoofing_values">
 		<item>Off</item>
 		<item>On</item>
 		<item>Restricted</item>

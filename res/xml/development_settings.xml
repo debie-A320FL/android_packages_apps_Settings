@@ -154,14 +154,14 @@
 			android:key="custom_toggle"
 			android:title="@string/custom_toggle_title" />
 		
-		<!-- My custom spinner -->
+		<!-- Control the state of signature spoofing -->
 		<ListPreference
-			android:key="custom_spinner"
-			android:title="@string/custom_spinner_title"
-			android:entries="@array/custom_spinner_display_values"
-			android:entryValues="@array/custom_spinner_values"
-			android:dialogTitle="@string/custom_spinner_title"
-			android:defaultValue="0" />
+			android:key="signature_spoofing"
+			android:title="@string/signature_spoofing_title"
+			android:entries="@array/signature_spoofing_values"
+			android:entryValues="@array/signature_spoofing_values"
+			android:dialogTitle="@string/signature_spoofing_title"
+			android:defaultValue="Off" />
         
     </PreferenceCategory>
 

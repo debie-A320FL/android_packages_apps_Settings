@@ -533,9 +533,9 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         controllers.add(new AutofillResetOptionsPreferenceController(context));
         controllers.add(new TrustAgentsExtendUnlockPreferenceController(context));
         controllers.add(new TrustLostLocksScreenPreferenceController(context));
-        // my custom toogle
+        // my custom features
         controllers.add(new CustomButtonPreferenceController(context));
-    	controllers.add(new CustomSpinnerPreferenceController(context));
+    	controllers.add(new SignatureSpoofingPreferenceController(context));
         return controllers;
     }
 
