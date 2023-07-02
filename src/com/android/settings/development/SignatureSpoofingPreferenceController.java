@@ -42,15 +42,12 @@ public class SignatureSpoofingPreferenceController extends DeveloperOptionsPrefe
 		if ("Off".equals(value)) {
 		    dynamicDescription = "Current state : Off.\n\nApps can have the Signature Spoofing permission but every attempt will be denied.";
 		} else if ("On".equals(value)) {
-		    dynamicDescription = "Current state : On.\n\nApp that have the Signature Spoofing permission can change their signature without restriction.";
+		    dynamicDescription = "Current state : On.\n\nApps with the Signature Spoofing permission can change their signature without restriction.";
 		} else {
-		    dynamicDescription = "Current state : Restricted.\n\nApp that have the Signature Spoofing permission will only be allow to spoof the hard coded Google signature. Other attempts will be denied."; 
+		    dynamicDescription = "Current state : Restricted.\n\nApps with the Signature Spoofing permission will only be allowed to spoof the hard coded Google signature. Other attempts will be denied."; 
 		}
 		
-		String staticDescriptionEnd = "Warning : Editing this setting does NOT affect older requests of signature spoofing.";
-		
-		String description = dynamicDescription + "\n\n" + staticDescriptionEnd;
-		preference.setSummary(description);
+		preference.setSummary(dynamicDescription);
 	}
 
 	@Override
