@@ -160,8 +160,7 @@
 			android:title="@string/signature_spoofing_title"
 			android:entries="@array/signature_spoofing_values"
 			android:entryValues="@array/signature_spoofing_values"
-			android:dialogTitle="@string/signature_spoofing_title"
-			android:defaultValue="Off" />
+			android:dialogTitle="@string/signature_spoofing_title" />
         
     </PreferenceCategory>
 

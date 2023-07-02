@@ -1,6 +1,7 @@
 package com.android.settings.development;
 
 import android.content.Context;
+import android.os.SystemProperties;
 import android.provider.Settings;
 
 import androidx.preference.ListPreference;
@@ -28,11 +29,8 @@ public class SignatureSpoofingPreferenceController extends DeveloperOptionsPrefe
 	public boolean onPreferenceChange(Preference preference, Object newValue) {
 		String value = (String) newValue;
 		
-		// Save to SharedPreferences to be used in others files
-		SharedPreferences sharedPreferences = mContext.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
-		SharedPreferences.Editor editor = sharedPreferences.edit();
-		editor.putString(SIGNATURE_SPOOFING_KEY, value);
-		editor.apply();
+		// In order to be used in others files
+		android.os.SystemProperties.set("sys.signature_spoofing", value);
 		
 		updateSummary(preference, value);
 		return true;
@@ -60,7 +58,8 @@ public class SignatureSpoofingPreferenceController extends DeveloperOptionsPrefe
 		ListPreference listPreference = (ListPreference) preference;
 		String value = listPreference.getValue();
 		if (value == null) {
-		    value = "Off"; // Signature Spoofing is off by default
+			// Check if we have already set a value before & Signature Spoofing is "Off" by default if not
+		    value = android.os.SystemProperties.get("sys.signature_spoofing", "Off");
 		    listPreference.setValue(value);
 		}
 		updateSummary(preference, value);

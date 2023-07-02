@@ -43,6 +43,10 @@ public class CustomButtonPreferenceController extends DeveloperOptionsPreference
 	public void updateState(Preference preference) {
 		boolean isEnabled = ((SwitchPreference) preference).isChecked();
 		updateSummary(preference, isEnabled);
+		
+		// Set visibility of the Button
+        boolean shouldShowButton = false;/* your condition, e.g. false to hide it */
+        preference.setVisible(shouldShowButton);
 	}
 
     @Override
