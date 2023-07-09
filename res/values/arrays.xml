@@ -1509,5 +1509,12 @@
         <!-- 3:  Always visible -->
         <item>@string/rtt_settings_always_visible</item>
     </string-array>
+    
+    <!--Signature Spoofing control arrays -->
+	<string-array name="signature_spoofing_values">
+		<item>Off</item>
+		<item>On</item>
+		<item>Restricted</item>
+	</string-array>
 
 </resources>

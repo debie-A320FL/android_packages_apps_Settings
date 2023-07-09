@@ -129,6 +129,27 @@
             android:title="@string/quick_settings_developer_tiles"
             android:fragment="com.android.settings.development.qstile.DevelopmentTileConfigFragment" />
     </PreferenceCategory>
+        
+    <!-- My customs features -->
+    <PreferenceCategory
+        android:key="custom_preference_category"
+        android:title="@string/custom_preference_category_title"
+        android:order="150">
+        
+		<!-- My custom toggle -->
+		<SwitchPreference
+			android:key="custom_toggle"
+			android:title="@string/custom_toggle_title" />
+		
+		<!-- Control the state of signature spoofing -->
+		<ListPreference
+			android:key="signature_spoofing"
+			android:title="@string/signature_spoofing_title"
+			android:entries="@array/signature_spoofing_values"
+			android:entryValues="@array/signature_spoofing_values"
+			android:dialogTitle="@string/signature_spoofing_title" />
+        
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="debug_debugging_category"
