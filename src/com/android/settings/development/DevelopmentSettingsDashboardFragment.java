@@ -584,7 +584,7 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         controllers.add(new SharedDataPreferenceController(context));
         controllers.add(new OverlaySettingsPreferenceController(context));
         // my custom features
-        controllers.add(new CustomButtonPreferenceController(context));
+        controllers.add(new SignatureSpoofingRemoverPreferenceController(context));
     	controllers.add(new SignatureSpoofingPreferenceController(context));
         return controllers;
     }
