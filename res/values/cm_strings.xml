@@ -198,10 +198,10 @@
     <string name="fast_charging_title">Fast charging</string>
     <string name="fast_charging_summary">Disable to reduce the heat produced by the device while charging or to extend the lifespan of the battery</string>
     
-    <!-- cm_strings.xml -->
-	<string name="custom_preference_category_title">My Custom Settings</string>
-    <!-- My custom button -->
-	<string name="custom_toggle_title">Custom Toggle</string>
+    <!-- Signature Spoofing Settings -->
+	<string name="signature_spoofing_category_title">Signature Spoofing</string>
+	<string name="signature_spoofing_permission_remover_title">Remove signature spoofing</string>
+	<string name="signature_spoofing_permission_remover_summary">Remove the FAKE_PACKAGE_SIGNATURE permission of all apps.</string>
 	<string name="signature_spoofing_title">Signature Spoofing implementation</string>
 	
 
